@@ -1,0 +1,17 @@
+apiVersion: user.mcwhitak/v1alpha1
+kind: User
+metadata:
+  name: hello-crossplane
+spec:
+  forProvider:
+    db: test
+    passwordSecretRef:
+      key: example-key
+      name: example-secret
+      namespace: upbound-system
+    roles:
+    - db: test
+      role: readWrite
+    user: user1
+  providerConfigRef:
+    name: default

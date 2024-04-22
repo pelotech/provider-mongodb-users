@@ -10,12 +10,12 @@ import (
 
 	ujconfig "github.com/crossplane/upjet/pkg/config"
 
-	"github.com/upbound/upjet-provider-template/config/null"
+	"github.com/mcwhitak/provider-mongodb-users/config/user"
 )
 
 const (
-	resourcePrefix = "template"
-	modulePath     = "github.com/upbound/upjet-provider-template"
+	resourcePrefix = "mongodb-users"
+	modulePath     = "github.com/mcwhitak/provider-mongodb-users"
 )
 
 //go:embed schema.json
@@ -27,7 +27,7 @@ var providerMetadata string
 // GetProvider returns provider configuration
 func GetProvider() *ujconfig.Provider {
 	pc := ujconfig.NewProvider([]byte(providerSchema), resourcePrefix, modulePath, []byte(providerMetadata),
-		ujconfig.WithRootGroup("template.upbound.io"),
+		ujconfig.WithRootGroup("mcwhitak"),
 		ujconfig.WithIncludeList(ExternalNameConfigured()),
 		ujconfig.WithFeaturesPackage("internal/features"),
 		ujconfig.WithDefaultResourceOptions(
@@ -36,7 +36,7 @@ func GetProvider() *ujconfig.Provider {
 
 	for _, configure := range []func(provider *ujconfig.Provider){
 		// add custom config functions
-		null.Configure,
+		user.Configure,
 	} {
 		configure(pc)
 	}
