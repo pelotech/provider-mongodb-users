@@ -316,6 +316,9 @@ jobs:
         with:
           name: output
           path: _output/**
-
+      - name: Upjet Login
+        env:
+          UPJET_TOKEN: ${{ secrets.UPBOUND_MARKETPLACE_PUSH_ROBOT_PSW }}
+        run: up login -t "$UPJET_TOKEN"
       - name: Publish Artifacts
         run: make publish BRANCH_NAME=${GITHUB_REF##*/}
