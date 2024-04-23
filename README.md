@@ -10,7 +10,7 @@ MongoDb-Users API.
 Install the provider by using the following command after changing the image tag
 to the [latest release](https://marketplace.upbound.io/providers/mcwhitak/provider-mongodb-users):
 ```
-up ctp provider install mcwhitak/provider-mongodb-users:v0.1.0
+up ctp provider install mcwhitak/provider-mongodb-users:<version>
 ```
 
 Alternatively, you can use declarative installation:
@@ -21,46 +21,28 @@ kind: Provider
 metadata:
   name: provider-mongodb-users
 spec:
-  package: mcwhitak/provider-mongodb-users:v0.1.0
+  package: mcwhitak/provider-mongodb-users:<version>
 EOF
 ```
 
-Notice that in this example Provider resource is referencing ControllerConfig with debug enabled.
-
-You can see the API reference [here](https://doc.crds.dev/github.com/mcwhitak/provider-mongodb-users).
-
 ## Developing
 
-Run code-generation pipeline:
+Run the following to open a shell with all development dependencies installed
+
+```shell
+env NIXPKGS_ALLOW_UNFREE=1 devenv --impure shell
+```
+
+To change the upstream terraform provider version you are targeting, open the `Makefile` and change `TERRAFORM_PROVIDER_VERSION` and `TERRAFORM_NATIVE_PROVIDER_BINARY`
+
+Run code-generation:
+
 ```console
-go run cmd/generator/main.go "$PWD"
+make generate
 ```
 
 Run against a Kubernetes cluster:
 
 ```console
 make run
-```
-
-Build, push, and install:
-
-```console
-make all
-```
-
-Build binary:
-
-```console
-make build
-```
-
-## Report a Bug
-
-For filing bugs, suggesting improvements, or requesting new features, please
-open an [issue](https://github.com/mcwhitak/provider-mongodb-users/issues).
-
-
-## Open Development Shell
-```
-env NIXPKGS_ALLOW_UNFREE=1 devenv --impure shell
 ```
