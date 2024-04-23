@@ -1,4 +1,4 @@
-apiVersion: mongodb-users.upbound.io/v1beta1
+apiVersion: mongodb-users.mcwhitak/v1beta1
 kind: ProviderConfig
 metadata:
   name: default

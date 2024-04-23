@@ -6,9 +6,9 @@ spec:
   forProvider:
     db: test
     passwordSecretRef:
-      key: example-key
-      name: example-secret
-      namespace: upbound-system
+      key: password
+      name: user-creds
+      namespace: default
     roles:
     - db: test
       role: readWrite
