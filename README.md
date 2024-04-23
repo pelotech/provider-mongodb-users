@@ -58,3 +58,9 @@ make build
 
 For filing bugs, suggesting improvements, or requesting new features, please
 open an [issue](https://github.com/mcwhitak/provider-mongodb-users/issues).
+
+
+## Open Development Shell
+```
+env NIXPKGS_ALLOW_UNFREE=1 devenv --impure shell
+```

@@ -2,3 +2,6 @@ apiVersion: meta.pkg.crossplane.io/v1
 kind: Provider
 metadata:
   name: provider-mongodb-users
+  crossplane.io/maintainer: mcwhitak
+  crossplane.io/source: "https://github.com/mcwhitak/provider-mongodb-users"
+  crossplane.io/description: "Provisions MongoDB Users"

@@ -9,5 +9,6 @@
   packages = [
     pkgs.go
     pkgs.gotools
+    pkgs.upbound
   ];
 }
