@@ -90,6 +90,9 @@ fallthrough: submodules
 # we ensure image is present in daemon.
 xpkg.build.provider-mongodb-users: do.build.images
 
+login:
+	@$(UP) login
+
 # NOTE(hasheddan): we ensure up is installed prior to running platform-specific
 # build steps in parallel to avoid encountering an installation race condition.
 build.init: $(UP)

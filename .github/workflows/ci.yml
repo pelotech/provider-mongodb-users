@@ -317,6 +317,8 @@ jobs:
           name: output
           path: _output/**
       - name: Publish Artifacts
-        run: make publish BRANCH_NAME=${GITHUB_REF##*/}
+        run: |
+          make login
+          make publish BRANCH_NAME=${GITHUB_REF##*/}
         env:
           UP_TOKEN: ${{ secrets.UPBOUND_MARKETPLACE_PUSH_ROBOT_PSW }}
