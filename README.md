@@ -8,9 +8,9 @@ MongoDb-Users API.
 ## Getting Started
 
 Install the provider by using the following command after changing the image tag
-to the [latest release](https://marketplace.upbound.io/providers/mcwhitak/provider-mongodb-users):
+to the [latest release](https://marketplace.upbound.io/providers/pelotech/provider-mongodb-users):
 ```
-up ctp provider install mcwhitak/provider-mongodb-users:<version>
+up ctp provider install pelotech/provider-mongodb-users:<version>
 ```
 
 Alternatively, you can use declarative installation:
@@ -21,7 +21,7 @@ kind: Provider
 metadata:
   name: provider-mongodb-users
 spec:
-  package: mcwhitak/provider-mongodb-users:<version>
+  package: pelotech/provider-mongodb-users:<version>
 EOF
 ```
 

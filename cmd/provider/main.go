@@ -26,12 +26,12 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/cache"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	"github.com/mcwhitak/provider-mongodb-users/apis"
-	"github.com/mcwhitak/provider-mongodb-users/apis/v1alpha1"
-	"github.com/mcwhitak/provider-mongodb-users/config"
-	"github.com/mcwhitak/provider-mongodb-users/internal/clients"
-	"github.com/mcwhitak/provider-mongodb-users/internal/controller"
-	"github.com/mcwhitak/provider-mongodb-users/internal/features"
+	"github.com/pelotech/provider-mongodb-users/apis"
+	"github.com/pelotech/provider-mongodb-users/apis/v1alpha1"
+	"github.com/pelotech/provider-mongodb-users/config"
+	"github.com/pelotech/provider-mongodb-users/internal/clients"
+	"github.com/pelotech/provider-mongodb-users/internal/controller"
+	"github.com/pelotech/provider-mongodb-users/internal/features"
 )
 
 func main() {

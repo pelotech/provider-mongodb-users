@@ -9,8 +9,8 @@ import (
 
 	"github.com/crossplane/upjet/pkg/controller"
 
-	providerconfig "github.com/mcwhitak/provider-mongodb-users/internal/controller/providerconfig"
-	user "github.com/mcwhitak/provider-mongodb-users/internal/controller/user/user"
+	providerconfig "github.com/pelotech/provider-mongodb-users/internal/controller/providerconfig"
+	user "github.com/pelotech/provider-mongodb-users/internal/controller/user/user"
 )
 
 // Setup creates all controllers with the supplied logger and adds them to

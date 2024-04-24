@@ -3,4 +3,4 @@ kind: Provider
 metadata:
   name: provider-mongodb-users
 spec:
-  package: mcwhitak/provider-mongodb-users:v0.1.0
+  package: pelotech/provider-mongodb-users:v0.1.0

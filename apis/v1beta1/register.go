@@ -13,7 +13,7 @@ import (
 
 // Package type metadata.
 const (
-	Group   = "mongodb-users.mcwhitak"
+	Group   = "mongodb-users.pelotech"
 	Version = "v1beta1"
 )
 

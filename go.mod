@@ -1,4 +1,4 @@
-module github.com/mcwhitak/provider-mongodb-users
+module github.com/pelotech/provider-mongodb-users
 
 go 1.19
 

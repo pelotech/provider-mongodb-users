@@ -11,7 +11,7 @@ import (
 
 	"github.com/crossplane/upjet/pkg/pipeline"
 
-	"github.com/mcwhitak/provider-mongodb-users/config"
+	"github.com/pelotech/provider-mongodb-users/config"
 )
 
 func main() {

@@ -4,9 +4,9 @@ kind: CustomResourceDefinition
 metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.13.0
-  name: users.user.mcwhitak
+  name: users.user.pelotech
 spec:
-  group: user.mcwhitak
+  group: user.pelotech
   names:
     categories:
     - crossplane

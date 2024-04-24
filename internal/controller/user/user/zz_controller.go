@@ -23,8 +23,8 @@ import (
 	"github.com/crossplane/upjet/pkg/terraform"
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	v1alpha1 "github.com/mcwhitak/provider-mongodb-users/apis/user/v1alpha1"
-	features "github.com/mcwhitak/provider-mongodb-users/internal/features"
+	v1alpha1 "github.com/pelotech/provider-mongodb-users/apis/user/v1alpha1"
+	features "github.com/pelotech/provider-mongodb-users/internal/features"
 )
 
 // Setup adds a controller that reconciles User managed resources.

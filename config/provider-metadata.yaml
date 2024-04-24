@@ -1,4 +1,4 @@
-name: mcwhitak/mongodb-users
+name: pelotech/mongodb-users
 resources:
     mongodb-users_user:
         subCategory: ""

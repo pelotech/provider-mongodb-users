@@ -2,15 +2,15 @@
 # Setup Project
 
 PROJECT_NAME ?= provider-mongodb-users
-PROJECT_REPO ?= github.com/mcwhitak/$(PROJECT_NAME)
+PROJECT_REPO ?= github.com/pelotech/$(PROJECT_NAME)
 
 export TERRAFORM_VERSION ?= 1.5.7
 
-export TERRAFORM_PROVIDER_SOURCE ?= mcwhitak/mongodb-users
-export TERRAFORM_PROVIDER_REPO ?= https://github.com/mcwhitak/terraform-provider-mongodb-users
-export TERRAFORM_PROVIDER_VERSION ?= 0.0.5
+export TERRAFORM_PROVIDER_SOURCE ?= pelotech/mongodb-users
+export TERRAFORM_PROVIDER_REPO ?= https://github.com/pelotech/terraform-provider-mongodb-users
+export TERRAFORM_PROVIDER_VERSION ?= 0.0.7
 export TERRAFORM_PROVIDER_DOWNLOAD_NAME ?= terraform-provider-mongodb-users
-export TERRAFORM_PROVIDER_DOWNLOAD_URL_PREFIX ?= https://github.com/mcwhitak/$(TERRAFORM_PROVIDER_DOWNLOAD_NAME)/releases/download/v$(TERRAFORM_PROVIDER_VERSION)
+export TERRAFORM_PROVIDER_DOWNLOAD_URL_PREFIX ?= https://github.com/pelotech/$(TERRAFORM_PROVIDER_DOWNLOAD_NAME)/releases/download/v$(TERRAFORM_PROVIDER_VERSION)
 export TERRAFORM_NATIVE_PROVIDER_BINARY ?= terraform-provider-mongodb-users_v0.0.5
 export TERRAFORM_DOCS_PATH ?= docs/resources
 
@@ -58,17 +58,17 @@ UPTEST_VERSION = v0.5.0
 # ====================================================================================
 # Setup Images
 
-REGISTRY_ORGS ?= xpkg.upbound.io/mcwhitak
+REGISTRY_ORGS ?= xpkg.upbound.io/pelotech
 IMAGES = $(PROJECT_NAME)
 -include build/makelib/imagelight.mk
 
 # ====================================================================================
 # Setup XPKG
 
-XPKG_REG_ORGS ?= xpkg.upbound.io/mcwhitak
+XPKG_REG_ORGS ?= xpkg.upbound.io/pelotech
 # NOTE(hasheddan): skip promoting on xpkg.upbound.io as channel tags are
 # inferred.
-XPKG_REG_ORGS_NO_PROMOTE ?= xpkg.upbound.io/mcwhitak
+XPKG_REG_ORGS_NO_PROMOTE ?= xpkg.upbound.io/pelotech
 XPKGS = $(PROJECT_NAME)
 -include build/makelib/xpkg.mk
 
