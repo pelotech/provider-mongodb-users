@@ -4,9 +4,9 @@ kind: CustomResourceDefinition
 metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.13.0
-  name: providerconfigs.mongodb-users.pelotech
+  name: providerconfigs.mongodb-users.mongo.pelotech
 spec:
-  group: mongodb-users.pelotech
+  group: mongodb-users.mongo.pelotech
   names:
     categories:
     - crossplane
